@@ -1,3 +1,4 @@
+//A.Restone?
 #include <iostream>
 using namespace std;
 
