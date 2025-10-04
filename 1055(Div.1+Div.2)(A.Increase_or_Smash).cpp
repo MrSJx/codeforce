@@ -10,19 +10,21 @@ int main()
         int n;
         cin >> n;
         vector<int> arr(n);
+        vector<int> arr1;
         for (int i = 0; i < n; i++)
         {
             cin >> arr[i];
         }
-        vector<int> carr = arr;
-        sort(carr.begin(), carr.end());
-        if (arr[0] == 1)
+        if (n == 1)
         {
-            cout << "YES\n";
+            cout << 1 << "\n";
         }
         else
         {
-            cout << "NO\n";
+            set<int> un(arr.begin(), arr.end());
+            vector<int> darr(un.begin(), un.end());
+            int len = darr.size();
+            cout << 2 * len - 1 << "\n";
         }
     }
 }
